@@ -121,7 +121,7 @@ class Window(QWidget):
         self.groupBox.setLayout(hboxlayout)
 
 ## Fuctions with test cases
-    def addition(self,num1,num2):
+    def addition(self):
         if self.check1.isChecked():
             self.cnt += 1
             num1 = float(self.line1.text())
@@ -136,7 +136,7 @@ class Window(QWidget):
             self.label.setText("Addition: " + str(num1 + num2))
 
 
-    def subtraction(self,num1,num2):
+    def subtraction(self):
         if self.check2.isChecked():
             self.cnt +=1
             num1 = float(self.line1.text())
@@ -151,7 +151,7 @@ class Window(QWidget):
             self.label.setText("Subtraction: " + str(num1 - num2))
 
 
-    def multiplication(self,num1,num2):
+    def multiplication(self):
         if self.check3.isChecked():
             self.cnt +=1
             num1 = float(self.line1.text())
@@ -166,7 +166,7 @@ class Window(QWidget):
             self.label.setText("Product: " + str(num1 * num2))
 
 
-    def division(self,num1,num2):
+    def division(self):
         if self.check4.isChecked():
             self.cnt +=1
             num1 = float(self.line1.text())
@@ -180,7 +180,7 @@ class Window(QWidget):
             self.label.setFixedWidth(300)
             self.label.setText("Division: " + str(num1 / num2))
 
-    def square(self,num1):
+    def square(self):
         if self.check5.isChecked():
             self.cnt +=1
             num1 = float(self.line1.text())
@@ -192,7 +192,7 @@ class Window(QWidget):
             self.label.setFixedWidth(300)
             self.label.setText("Square: " + str(num1 ** 2))
 
-    def cube(self,num1):
+    def cube(self):
         if self.check6.isChecked():
             self.cnt +=1
             num1 = float(self.line1.text())
